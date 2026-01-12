@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<!-- saved from url=(0112)https://cdpn.io/cpe/boomboom/index.html?editors=1000&key=index.html-9eb84b6a-3912-3aec-c6bc-2fcc1163b689#contact -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <title>CodePen Demo</title>
+
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+  <link rel="canonical" href="https://codepen.io/Romeo-Doamba/pen/dPGLMXJ?editors=1000">
+
+  
+  
+
+  <style id="INLINE_PEN_STYLESHEET_ID">
+    
+  </style>
+
+  
+<script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.télécharger"></script>
+<script src="./iframeConsoleRunner-6d8bf8b4b479137260842506acbb12717dace0823c023e08b96360e60b0840d9.js.télécharger"></script>
+<script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.télécharger"></script>
+<script src="./iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js.télécharger"></script>
+</head>
+
+<body>
+  
+
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Delarose Doamba — Portfolio Graphisme &amp; Design Web</title>
+  <meta name="description" content="Portfolio de Delarose Doamba — Graphiste, Designer Web, Créateur de contenu et Monteur vidéo.">
+
+  <!-- Police moderne -->
+  <link href="./css2" rel="stylesheet">
+
+  <!-- Icônes modernes -->
+  <script src="./a076d05399.js.télécharger" crossorigin="anonymous"></script>
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <style>
+    /* STYLE DE BASE MODERNE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f7;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #00e5ff;
+    }
+
+    /* HEADER */
+    .site-header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #00bcd4;
+      letter-spacing: 1px;
+    }
+
+    .site-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .site-nav a {
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+      text-align: center;
+      background: linear-gradient(135deg, #fafafa, #e5e5ea);
+      padding: 4rem 2rem;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00bcd4;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 20px rgba(0, 188, 212, 0.4);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .ctas {
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s;
+      background: #00bcd4;
+      color: #fff;
+      margin: 0.5rem;
+    }
+
+    .btn:hover {
+      background: #00e5ff;
+      transform: translateY(-2px);
+    }
+
+    .btn.ghost {
+      background: transparent;
+      border: 2px solid #00bcd4;
+      color: #00bcd4;
+    }
+
+    .btn.ghost:hover {
+      background: #00bcd4;
+      color: #fff;
+    }
+
+    /* SECTIONS */
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #00e5ff;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #aaa;
+      margin-bottom: 2rem;
+    }
+
+    /* SERVICES */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .services-grid li {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .services-grid li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+    }
+
+    /* PORTFOLIO */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card-meta {
+      padding: 1rem;
+      color: #ddd;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      align-items: start;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      background: #111;
+      border: 1px solid #333;
+      color: #fff;
+      padding: 0.8rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+
+    /* ANIMATIONS SCROLL */
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    [data-animate].visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ===== NAVBAR RESPONSIVE ===== */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      width: 28px;
+      height: 3px;
+      background: #00bcd4;
+      border-radius: 3px;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .site-nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #111;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .site-nav.open {
+        display: flex;
+      }
+
+      .site-nav ul {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+
+      .nav-toggle {
+        display: flex;
+      }
+    }
+
+    /* Animation hamburger */
+    .nav-toggle.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  </style>
+
+
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://cdpn.io/cpe/boomboom/index.html?editors=1000&amp;key=index.html-9eb84b6a-3912-3aec-c6bc-2fcc1163b689#">DR.COM</a>
+
+      <!-- NOUVEAU BOUTON HAMBURGER -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="main-nav">
+        <ul>
+          <li><a href="https://cdpn.io/cpe/boomboom/index.html?editors=1000&amp;key=index.html-9eb84b6a-3912-3aec-c6bc-2fcc1163b689#services">Services</a></li>
+          <li><a href="https://cdpn.io/cpe/boomboom/index.html?editors=1000&amp;key=index.html-9eb84b6a-3912-3aec-c6bc-2fcc1163b689#portfolio">Portfolio</a></li>
+          <li><a href="https://cdpn.io/cpe/boomboom/index.html?editors=1000&amp;key=index.html-9eb84b6a-3912-3aec-c6bc-2fcc1163b689#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <img src="./Whats-App-Image-2025-09-29-23-51-57-348fb57d.jpg" alt="Delarose Doamba" class="portrait">
+        <h1>Delarose Doamba</h1>
+        <p class="lead">
+          Web design &amp; UI/UX • Création de contenu digital • Production vidéo &amp; montage • Marketing digital &amp; communication
+        </p>
+
+        <!-- 💻 Section logos alignés horizontalement -->
+        <div class="logo-container">
+          <a href="https://ibb.co/WNr5jDvS"><img src="./Adobe-Photoshop.jpg" alt="Adobe Photoshop"></a>
+          <a href="https://ibb.co/WNr5jDvS"><img src="./Lexique-AI.jpg" alt="Lexique AI"></a>
+          <img src="./Figma-logo.svg" alt="Figma">
+          <a href="https://ibb.co/p6P3b188"><img src="./After-Affect-Logo-Adobe.jpg" alt="After Effect"></a>
+          <a href="https://ibb.co/JRNmJCJ5"><img src="./Adobe-Premiere-Logo-PNG-Logo-Vector-Brand-Downloads-SVG-EPS.jpg" alt="Premiere Pro"></a>
+          <img src="./Visual-Studio-Code-logo-in-vector-format-Brandlogos-net.jpg" alt="VS Code">
+        </div>
+
+        <div class="ctas">
+          <a href="https://cdpn.io/cpe/boomboom/index.html?editors=1000&amp;key=index.html-9eb84b6a-3912-3aec-c6bc-2fcc1163b689#portfolio" class="btn">Voir mes créations</a>
+          <a href="https://cdpn.io/cpe/boomboom/index.html?editors=1000&amp;key=index.html-9eb84b6a-3912-3aec-c6bc-2fcc1163b689#contact" class="btn ghost">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .hero {
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .hero-content img.portrait {
+        width: 180px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      .lead {
+        font-size: 1.1em;
+        color: #444;
+        margin-bottom: 30px;
+      }
+
+      /* 🌈 Les logos côte à côte, même taille */
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* permet de s’adapter sur mobile */
+        gap: 25px;
+        /* espace entre les logos */
+        margin-bottom: 30px;
+      }
+
+      .logo-container img {
+        width: 80px;
+        /* ✅ taille uniforme pour tous */
+        height: 80px;
+        /* même hauteur */
+        object-fit: contain;
+        /* garde les proportions sans déformer */
+        border-radius: 10px;
+        background: white;
+        /* pour éviter les bords transparents irréguliers */
+        padding: 8px;
+        /* espace intérieur pour respirer */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .logo-container img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn {
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 25px;
+        text-decoration: none;
+        margin: 5px;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #444;
+      }
+
+      .btn.ghost {
+        background-color: transparent;
+        border: 1px solid #000;
+        color: #000;
+      }
+
+      .btn.ghost:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+    <section id="services" class="section visible" data-animate="">
+      <h2>Mes Services</h2>
+      <p class="subtitle">Des créations modernes et des solutions digitales sur mesure.</p>
+      <ul class="services-grid">
+        <li>
+          <h3><i class="fas fa-palette"></i> Affiches &amp; Dépliants</h3>
+          <p>Designs professionnels pour événements et communication.</p>
+        </li>
+        <li>
+          <h3><i class="fas fa-envelope"></i> Email Marketing</h3>
+          <p>Campagnes élégantes qui convertissent.</p>
+        </li>
+        <li>
+          <h3><i class="fas fa-laptop-code"></i> Sites Web</h3>
+          <p>UI/UX moderne et responsive, adaptés à votre image.</p>
+        </li>
+        <li>
+          <h3><i class="fas fa-mobile-alt"></i> MARKETING DIGITAL</h3>
+          <p>Stratégies efficaces pour booster votre visibilité en ligne.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="portfolio" class="section visible" data-animate="">
+      <h2>Portfolio</h2>
+      <p class="subtitle">Découvrez quelques-unes de mes réalisations.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="grid">
+            <div class="card">
+
+              <!-- IMAGE CLIQUABLE : OUVRE LA GALERIE -->
+              <a href="https://cdpn.io/cpe/boomboom/index.html?editors=1000&amp;key=index.html-9eb84b6a-3912-3aec-c6bc-2fcc1163b689#" class="open-gallery">
+                <img src="./Whats-App-Image-2025-10-29-at-12-35-48-30d4f2db.jpg" alt="">
+              </a>
+
+              <div class="card-meta">
+                <strong>Projet personnel</strong>
+                <span>Branding / Affiche</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================== -->
+          <!--           GALERIE             -->
+          <!-- ============================== -->
+
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+
+              <span class="close-gallery">×</span>
+              <div class="gallery-slider">
+                <img src="./week-enk-nov-z-1.jpg" alt="">
+                <img src="./RD-N-1.jpg" alt="RD-N-1" border="0">
+                <img src="./assiyah-delice-1-AA.jpg" alt="assiyah-delice-1-AA" border="0">
+                <img src="./LIEN_IMAGE_4.jpg" alt="">
+                <img src="./LIEN_IMAGE_4.jpg" alt="">
+                <img src="./LIEN_IMAGE_4.jpg" alt="">
+                <img src="./LIEN_IMAGE_4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================== -->
+          <!--            CSS                 -->
+          <!-- ============================== -->
+
+          <style>
+            .gallery-overlay {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.85);
+              align-items: center;
+              justify-content: center;
+              z-index: 9999;
+            }
+
+            .gallery-content {
+              position: relative;
+              width: 90%;
+              max-width: 900px;
+            }
+
+            .close-gallery {
+              position: absolute;
+              top: -40px;
+              right: 0;
+              font-size: 40px;
+              color: white;
+              cursor: pointer;
+            }
+
+            .gallery-slider {
+              display: flex;
+              overflow-x: auto;
+              scroll-snap-type: x mandatory;
+              gap: 20px;
+              padding: 20px;
+            }
+
+            .gallery-slider img {
+              width: 100%;
+              max-width: 900px;
+              border-radius: 12px;
+              scroll-snap-align: center;
+              flex-shrink: 0;
+            }
+          </style>
+
+          <!-- ============================== -->
+          <!--            SCRIPT              -->
+          <!-- ============================== -->
+
+          <script>
+            document.querySelector(".open-gallery").addEventListener("click", function(e) {
+              e.preventDefault();
+              document.querySelector(".gallery-overlay").style.display = "flex";
+            });
+            document.querySelector(".close-gallery").addEventListener("click", function() {
+              document.querySelector(".gallery-overlay").style.display = "none";
+            });
+          </script>
+        </div>
+        <div class="card">
+          <img src="./EM.jpg" alt="Email Marketing">
+          <div class="card-meta">
+            <strong>Campagne</strong>
+            <span>Email marketing</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./rr-1p.jpg" alt="rr-1p">
+          <div class="card-meta">
+            <strong>Site web</strong>
+            <span>UI/UX Design</span>
+          </div>
+        </div>
+
+    </div></section>
+
+    <section id="contact" class="section visible" data-animate="">
+      <h2>Contact</h2>
+      <p class="subtitle">Parlons de votre projet 🎯</p>
+      <div class="contact-grid">
+        <form class="contact-form">
+          <label>Nom</label>
+          <input type="text" required="">
+          <label>Email</label>
+          <input type="email" required="">
+          <label>Message</label>
+          <textarea rows="5" required=""></textarea>
+          <div class="form-actions">
+            <button class="btn" type="submit">Envoyer</button>
+            <a class="btn ghost" href="mailto:romeodoamba980@gmail.com">Par email</a>
+          </div>
+        </form>
+
+        <aside>
+          <h3>Réseaux &amp; Contact</h3>
+          <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/delarose__doamba" target="_blank">@delarose__doamba</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:romeodoamba980@gmail.com">romeodoamba980@gmail.com</a></p>
+          <p class="note">Je réponds sous 48h ⏱️</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Delarose Doamba — Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // Apparition au scroll
+    const animElems = document.querySelectorAll("[data-animate]");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    });
+    animElems.forEach(el => observer.observe(el));
+  </script>
+
+  <script>
+    const navToggle = document.getElementById("nav-toggle");
+    const nav = document.getElementById("main-nav");
+    navToggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+      navToggle.classList.toggle("active");
+    });
+  </script>
+
+
+
+
+  
+  
+
+
+</body></html>
